@@ -77,6 +77,8 @@ class Calculator {
         if (this.operation != null) {
             this.previousOperandTextElement.innerText =
                 `${this.previousOperand} + ${operation.toString()}`;
+        } else {
+            this.previousOperandTextElement.innerText = '';
         }
     }
 }
